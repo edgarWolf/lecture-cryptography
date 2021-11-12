@@ -1,0 +1,10 @@
+KryptoWS21_handout.pdf
+**/.vscode
+.git
+**/*.ipynb_checkpoints
+**/*.metadata
+**/*.class
+**/*.pdf
+**/*.classpath
+**/*.project
+**/*.settings

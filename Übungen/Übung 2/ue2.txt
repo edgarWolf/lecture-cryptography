@@ -1,0 +1,62 @@
+x * (y * z) = (x*y) * z
+
+==> f1 * (f2 * f3) = f1 * (f2(f3)) = f1(f2(f3))
+
+==> (f1 * f2) * f3 = f1(f2)) * f3 = f1(f2(f3)))
+
+
+komm:
+
+M = {0, 1, 2}
+f1: M -> 0
+f2: M -> 1
+
+0 = f1(f2(x)) = f2(f1(x)) = 1 --> geht nicht, also nicht kommutativ
+
+
+assoziativ:
+(f1 * f2) * f3(x)= 
+// f1 * f2 mit Argument f3(x)
+(f1 * f2)(f3(x))
+= f1(f2(f3(x)))
+= f1(f2 * f3(x)) = 
+f1 * (f2 * f3)(x) --> ja ist assoziativ
+
+
+b) 
+neutrales Element:
+Ja die Identität (Selbstabbildung)
+
+id: M -> M mit id(x) = x weil f * id(x) = f(id(x)) = f(x) 
+
+c) 
+Ja! M aus oben sei gegeben
+
+f1: M -> 0
+
+Angenommen es gäbe eine Umkehrfunktion g:
+
+f * g = id
+-----
+f * g(1) = f(g(1)) = 0 != 1 --> es gibt also keine Umkehrfunktion für dieses Beispiel
+
+Voraussetzung:
+F besitzt inv. Element g (ist also gesichert) (also es gibt ein g sodass f*g = id)
+
+zu zeigen: F is bijektiv: reicht: schon: f injektiv ODER f surjektiv
+
+Def injektiv:
+   f inj <-> all(x, y)(f(x) = f(y) -> x=y)
+also muss x auch y sein
+   
+Beweis: 
+				// da x = y
+x = id(x) = g * f(x) = g(f(x)) = g(f(y)) = g * f(y) = id(y) = y 
+
+d)
+Ja Algebra, da g(f(x)) = h(x) = h(y) = g(f(y)) // wir haben schon gezeigt f(x) = f(y)
+Ja Halbgruppe, weil M != empty und assoziativ
+Und Gruppe, da neutrales Element (siehe b) und jeweils neutrale Elemente (siehe c))
+e) n Fakultät: Sind immer Permutationen, die ich in dem Fall durchgehen muss 
+
+e)
