@@ -8,3 +8,6 @@ KryptoWS21_handout.pdf
 **/*.classpath
 **/*.project
 **/*.settings
+**/bin/*
+**/obj
+
