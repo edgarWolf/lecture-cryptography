@@ -10,4 +10,5 @@ KryptoWS21_handout.pdf
 **/*.settings
 **/bin/*
 **/obj
+**/*.jar
 
