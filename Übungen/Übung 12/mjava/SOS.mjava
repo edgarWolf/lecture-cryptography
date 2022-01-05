@@ -1,9 +1,29 @@
 boolean main() {
     println("Berechnen des SOS Problems...");
 
+	// Daten
     int[] a = new int[] {1, 2, 3, 5, 7, 12};
     int b = 6; 
+	
+	// Debug Output erstellen.
+	String output = "Input array: [";
+	for (int i = 0; i < 6; i++) {
+		if (i != 5) {
+			output = output + a[i] + " ";
+		}
+		else {
+			output = output + a[i];
+		}
+		
+	}
+	
+	output = output + "]";
+	println(output);
+	
+	println("Input sum: " + b);
 
+
+	// Algorithmus
     boolean sumFound = false;
     int sum = 0;
     for (int i = 0; i < 6; i++) {
@@ -13,6 +33,7 @@ boolean main() {
         }
     }
 
+	// Ausgabe, ob Pfad eine Summe gefunde hat.
     if (sumFound) {
         println("Summe fuer b=" + b + " gefunden.");
     }
