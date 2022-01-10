@@ -1,0 +1,26 @@
+boolean main() {
+    int x = 10000; // Kandidat für den Primzahl-Test
+
+    // Teile x durch alle potentiellen Teiler x. Das Ganze nichtdeterministisch parallel
+    // Idee: Binärdarstellung der Teiler nehmen und jeweils verdoppeln (Linksshit) und dann eine 1 (ungerade) und 0 (gerade) hinzufügen.
+    int y = 0;
+
+    // Kontrollvariable, die für die Schleifenbedingung relevant ist.
+    int q = 1;
+
+    // Appendix {0, 1}
+    int z;
+    while(q < x / 2) {
+        split z = 0; and z = 1;
+        y = y * 2; // Linksshift
+        q = q * 2;
+        y = y + z;
+    }
+
+    if (y == 0 || y == 1) return false;
+
+    println(y);
+
+    return x % y == 0;
+
+}
